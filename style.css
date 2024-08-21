@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: 0.2s ease-out;
+}
+
+html,
+body,
+main {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  --color: #234;
+  --border: #304463;
+  --item: #FFC470;
+  --container: #B4D6CD;
+}
+
+main {
+  color: var(--color);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.display {
+  display: flex;
+  flex-flow: column;
+  width: 30%;
+  height: auto;
+  background-color: var(--container);
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  min-height: 200px;
+  border: 2px solid var(--border);
+  border-radius: 15px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.inputs {
+  display: grid;
+  width: 100%;
+  height: 20%;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
+.inputs input {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid var(--border);
+  padding: 10px;
+  outline: none;
+}
+.inputs input:hover {
+  translate: -3px -3px;
+  box-shadow: 3px 3px 0 var(--border), 2px 2px 0 var(--border), 1px 1px 0 var(--border);
+}
+.inputs input:focus {
+  translate: -5px -5px;
+  box-shadow: 5px 5px 0 var(--border), 4px 4px 0 var(--border), 3px 3px 0 var(--border), 2px 2px 0 var(--border), 1px 1px 0 var(--border);
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  height: 80%;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--item);
+  border-radius: 10px;
+  translate: -5px -5px;
+  border: 2px solid var(--border);
+  box-shadow: 5px 5px 0 var(--border), 4px 4px 0 var(--border), 3px 3px 0 var(--border), 2px 2px 0 var(--border), 1px 1px 0 var(--border);
+  cursor: pointer;
+  font-size: 2rem;
+}
+.item:hover {
+  translate: -3px -3px;
+  box-shadow: 3px 3px 0 var(--border), 2px 2px 0 var(--border), 1px 1px 0 var(--border);
+}
+.item:active {
+  translate: 0px 0px;
+  box-shadow: 0px 0px 0 var(--border);
+}/*# sourceMappingURL=style.css.map */
