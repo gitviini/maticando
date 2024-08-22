@@ -6,14 +6,17 @@
     <title>Maticando</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/calculator.png" type="image/x-icon">
 </head>
 <body>
     <main>
         <div class="display">
-            <div class="inputs">
-                <input type="text" class="operatos">
-                <input type="text" class="operatos">
-                <input type="text" class="operatos">
+            <div>
+                <form action="" class="inputs">
+                    <input type="text" class="operatos" required pattern="[Xx*\/]{1}" maxlength="1">
+                    <input type="text" class="operatos" required pattern="[Xx*\/]{1}" maxlength="1">
+                    <input type="text" class="operatos" required pattern="[Xx*\/]{1}" maxlength="1">
+                </form>
             </div>
             <div class="container"></div>
         </div>
